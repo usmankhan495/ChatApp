@@ -67,7 +67,7 @@ public class ChatAppTesting extends AndroidTestCase {
         authSignal = new CountDownLatch(1);
         auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser() == null) {
-            auth.createUserWithEmailAndPassword("usmankhalid@gmail.com", "12345678").addOnCompleteListener(
+            auth.createUserWithEmailAndPassword("test1@gmail.com", "12345678").addOnCompleteListener(
                     new OnCompleteListener<AuthResult>() {
 
                         @Override
